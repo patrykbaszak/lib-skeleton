@@ -20,5 +20,18 @@ $composer->title ??= $title;
 $composer->description ??= $title . ' - Library';
 $composer->autoload->{'psr-4'} = (object) [$namespace . '\\' => 'src/'];
 $composer->{'autoload-dev'}->{'psr-4'} = (object) [$namespace . '\\Tests\\' => 'tests/'];
+$composer->type = 'library';
 
 file_put_contents(__DIR__ . '/../skeleton/composer.json', json_encode($composer, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+
+// setup namespace in files
+$files = [
+    dirname(__DIR__) . '/skeleton/src/Kernel.php',
+    dirname(__DIR__) . '/skeleton/bin/console',
+];
+
+foreach ($files as $file) {
+    $content = file_get_contents($file);
+    $content = str_replace('$NAMESPACE', $namespace, $content);
+    file_put_contents($file, $content);
+}
