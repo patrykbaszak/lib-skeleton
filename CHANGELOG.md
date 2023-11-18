@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/patrykbaszak/lib-skeleton/compare/0.1.1...0.1.2) (2023-11-18)
+
+
+### Bug Fixes
+
+* changed env test ([a286ae4](https://github.com/patrykbaszak/lib-skeleton/commit/a286ae4e6d3c6a62384bdcc98c8359b36661ea29))
+
 ### [0.1.1](https://github.com/patrykbaszak/lib-skeleton/compare/0.1.0...0.1.1) (2023-11-18)
 
 
