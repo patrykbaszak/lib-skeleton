@@ -36,3 +36,7 @@ foreach ($files as $file) {
     $content = str_replace('$NAMESPACE', $namespace, $content);
     file_put_contents($file, $content);
 }
+
+$content = file_get_contents(dirname(__DIR__) . '/skeleton/.env.test');
+$content = str_replace('App\Kernel', $namespace . '\\Kernel', $content);
+file_put_contents(dirname(__DIR__) . '/skeleton/.env.test', $content);
