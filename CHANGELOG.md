@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/patrykbaszak/lib-skeleton/compare/0.1.2...0.1.3) (2023-11-19)
+
+
+### Bug Fixes
+
+* Added ci and corrected start script ([cde5902](https://github.com/patrykbaszak/lib-skeleton/commit/cde59028b7ed53edb941b6c4ba1497f35835665f))
+* corrected tests and start.sh ([f1b8a68](https://github.com/patrykbaszak/lib-skeleton/commit/f1b8a689cf4771796cee3be8ea45b840e82cedfc))
+* lowered error codes ([10bb920](https://github.com/patrykbaszak/lib-skeleton/commit/10bb920efaa00649df9c1dd040fe16149c72d1dc))
+* Updated .gitignore ([42cd1eb](https://github.com/patrykbaszak/lib-skeleton/commit/42cd1eb35b3698f39f1428cbef93a6fb3deddbe0))
+
 ### [0.1.2](https://github.com/patrykbaszak/lib-skeleton/compare/0.1.1...0.1.2) (2023-11-18)
 
 
