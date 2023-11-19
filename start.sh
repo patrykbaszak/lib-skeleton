@@ -3,7 +3,7 @@
 # Check if the argument is provided
 if [ -z "$1" ]; then
     echo "Error: No argument provided."
-    exit 404
+    exit 44
 fi
 
 # Check if the format of the argument is correct
@@ -11,7 +11,7 @@ if [[ $1 =~ ^[^/]+/[^/]+$ ]]; then
     echo "The format '$1' is correct."
 else
     echo "Error: The argument format is incorrect. Expected 'vendor/package'."
-    exit 400
+    exit 40
 fi
 
 CHECKSUM_FILE=".dockerfile_checksum"
