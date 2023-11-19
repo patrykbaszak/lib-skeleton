@@ -10,8 +10,14 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
+    - name: Test start.sh script without arguments
+      run: bash start.sh || [ $? -eq 404 ]
+
+    - name: Test start.sh script with wrong argument
+      run: bash start.sh wrong || [ $? -eq 404 ]
+
     - name: Running start.sh Script
-      run: bash start.sh
+      run: bash start.sh library/test
 
     - name: Application Build check
       run: docker exec php composer cache:clear
