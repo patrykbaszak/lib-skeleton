@@ -67,7 +67,7 @@ rm -rf skeleton/bin
 cp -r src/bin skeleton/bin
 rm -rf skeleton/public
 
-docker exec php php scripts/Setup.php
+docker exec php bash -c "php scripts/Setup.php $1" || exit 50
 docker stop php >/dev/null 2>&1
 docker rm -f php >/dev/null 2>&1
 docker rmi -f $IMAGE_NAME >/dev/null 2>&1
