@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/patrykbaszak/lib-skeleton/compare/1.1.0...1.2.0) (2024-02-14)
+
+
+### Features
+
+* Fixed wrong namespace ([4117920](https://github.com/patrykbaszak/lib-skeleton/commit/4117920f5e97927ff407fd019b57dc4100c92b53))
+
 ## [1.1.0](https://github.com/patrykbaszak/lib-skeleton/compare/1.0.0...1.1.0) (2024-02-14)
 
 
