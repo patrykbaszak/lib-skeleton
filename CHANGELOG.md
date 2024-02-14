@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/patrykbaszak/lib-skeleton/compare/1.0.0...1.1.0) (2024-02-14)
+
+
+### Features
+
+* Added develop.sh script and moved Kernel to correct directory ([058154c](https://github.com/patrykbaszak/lib-skeleton/commit/058154c0c66a1e530bf85145587b00354d45062f))
+
+
+### Bug Fixes
+
+* Corrected README.md ([5ada601](https://github.com/patrykbaszak/lib-skeleton/commit/5ada60117f90d25b9bb4935c657cc9e75ba8d40e))
+
 ## [1.0.0](https://github.com/patrykbaszak/lib-skeleton/compare/0.1.4...1.0.0) (2023-11-19)
 
 
