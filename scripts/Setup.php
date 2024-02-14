@@ -27,7 +27,7 @@ file_put_contents(__DIR__ . '/../skeleton/composer.json', json_encode($composer,
 
 // setup namespace in files
 $files = [
-    dirname(__DIR__) . '/skeleton/src/Kernel.php',
+    dirname(__DIR__) . '/skeleton/tests/Kernel.php',
     dirname(__DIR__) . '/skeleton/bin/console',
 ];
 
@@ -38,5 +38,5 @@ foreach ($files as $file) {
 }
 
 $content = file_get_contents(dirname(__DIR__) . '/skeleton/.env.test');
-$content = str_replace('App\Kernel', $namespace . '\\Kernel', $content);
+$content = str_replace('App\Kernel', $namespace . '\\Tests\\Kernel', $content);
 file_put_contents(dirname(__DIR__) . '/skeleton/.env.test', $content);

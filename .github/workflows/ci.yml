@@ -21,3 +21,6 @@ jobs:
 
     - name: Application Build check
       run: docker exec php composer cache:clear
+
+    - name: Application Test
+      run: docker exec php composer test:ci

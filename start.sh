@@ -66,6 +66,8 @@ cp -r src/src skeleton/src
 rm -rf skeleton/bin
 cp -r src/bin skeleton/bin
 rm -rf skeleton/public
+rm -rf skeleton/tests
+cp -r src/tests skeleton/tests
 
 docker exec php bash -c "php scripts/Setup.php $1" || exit 50
 docker stop php >/dev/null 2>&1
